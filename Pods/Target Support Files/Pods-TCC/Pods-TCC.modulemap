@@ -1,0 +1,6 @@
+module Pods_TCC {
+  umbrella header "Pods-TCC-umbrella.h"
+
+  export *
+  module * { export * }
+}

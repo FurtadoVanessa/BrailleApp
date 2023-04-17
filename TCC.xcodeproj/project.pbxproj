@@ -7,15 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499772980A25FDB1FD411EF9 /* libPods-TCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8249E86A05F7CEAE6AD0EE6 /* libPods-TCC.a */; };
+		A41EA70C275D6931007A64EB /* GetLineCountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70B275D6931007A64EB /* GetLineCountUseCase.swift */; };
+		A41EA70E275D6C00007A64EB /* ConvertWordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70D275D6C00007A64EB /* ConvertWordUseCase.swift */; };
+		A41EA710275D7E83007A64EB /* CreateBrailleSheetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70F275D7E83007A64EB /* CreateBrailleSheetUseCase.swift */; };
+		A41EA712275D97D6007A64EB /* ConvertBrailleCellToPixelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA711275D97D6007A64EB /* ConvertBrailleCellToPixelsUseCase.swift */; };
+		A41EA714275D997A007A64EB /* ConvertPrinterSheetToPixelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA713275D997A007A64EB /* ConvertPrinterSheetToPixelsUseCase.swift */; };
+		A41EA716275D9E65007A64EB /* GetBrailleLinesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA715275D9E65007A64EB /* GetBrailleLinesUseCase.swift */; };
+		A41EA718275D9ED2007A64EB /* Braille.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA717275D9ED2007A64EB /* Braille.swift */; };
+		A46F6FE0275C3F3400956694 /* ConvertPixelByMMUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FDF275C3F3400956694 /* ConvertPixelByMMUseCase.swift */; };
+		A46F6FE2275C48A600956694 /* BrailleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FE1275C48A600956694 /* BrailleViewModel.swift */; };
+		A46F6FE4275C4B7600956694 /* BrailleAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FE3275C4B7600956694 /* BrailleAlphabet.swift */; };
+		A46F6FE6275C4C4800956694 /* LocalAlphabetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FE5275C4C4800956694 /* LocalAlphabetService.swift */; };
+		A46F6FE8275C4ED800956694 /* BrailleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FE7275C4ED800956694 /* BrailleCell.swift */; };
+		A46F6FEA275C51FF00956694 /* PrinterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FE9275C51FF00956694 /* PrinterSheet.swift */; };
+		A46F6FEC275C542200956694 /* GetLineSizeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FEB275C542200956694 /* GetLineSizeUseCase.swift */; };
+		A46F6FEE275C557100956694 /* GetPrinterSheetWithMarginsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F6FED275C557100956694 /* GetPrinterSheetWithMarginsUseCase.swift */; };
+		A47FD43F277A0603008DEED0 /* CreationModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD43E277A0603008DEED0 /* CreationModeViewController.swift */; };
+		A47FD441277A0636008DEED0 /* BrailleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD440277A0636008DEED0 /* BrailleRouter.swift */; };
+		A47FD445277A09B8008DEED0 /* CreationModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD444277A09B8008DEED0 /* CreationModeView.swift */; };
+		A47FD447277A0C7F008DEED0 /* CreationModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD446277A0C7F008DEED0 /* CreationModeViewModel.swift */; };
+		A47FD449277A0CBE008DEED0 /* CreationModeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD448277A0CBE008DEED0 /* CreationModeDataStore.swift */; };
+		A47FD44B277A0D7B008DEED0 /* CreationModeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD44A277A0D7B008DEED0 /* CreationModeConfigurator.swift */; };
+		A47FD44E277A2FE8008DEED0 /* CreatePDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD44D277A2FE8008DEED0 /* CreatePDFViewController.swift */; };
+		A47FD450277A2FF2008DEED0 /* CreatePDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD44F277A2FF2008DEED0 /* CreatePDFView.swift */; };
+		A47FD452277A2FFD008DEED0 /* CreatePDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD451277A2FFD008DEED0 /* CreatePDFViewModel.swift */; };
+		A47FD454277A356D008DEED0 /* CreatePDFConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD453277A356D008DEED0 /* CreatePDFConfigurator.swift */; };
+		A47FD456277A55A6008DEED0 /* GetBrailleSheetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD455277A55A6008DEED0 /* GetBrailleSheetsUseCase.swift */; };
+		A47FD458277A609A008DEED0 /* CreateBraillePagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD457277A609A008DEED0 /* CreateBraillePagesUseCase.swift */; };
+		A47FD45A277E196A008DEED0 /* CreateBraillePagesUseCaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD459277E196A008DEED0 /* CreateBraillePagesUseCaseConfigurator.swift */; };
+		A47FD45C277E208F008DEED0 /* BraillePageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD45B277E208F008DEED0 /* BraillePageConfiguration.swift */; };
+		A47FD45E277E23E8008DEED0 /* BrailleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD45D277E23E8008DEED0 /* BrailleConfigurator.swift */; };
+		A47FD461277E3F84008DEED0 /* CustomPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD460277E3F84008DEED0 /* CustomPageView.swift */; };
+		A47FD463277E3FB1008DEED0 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD462277E3FB1008DEED0 /* CustomPageViewController.swift */; };
+		A47FD465277E3FBC008DEED0 /* CustomPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD464277E3FBC008DEED0 /* CustomPageViewModel.swift */; };
+		A47FD467277E4021008DEED0 /* CustomFieldEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD466277E4021008DEED0 /* CustomFieldEditView.swift */; };
+		A47FD469277E45A0008DEED0 /* CustomPageDisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD468277E45A0008DEED0 /* CustomPageDisplayViewModel.swift */; };
+		A47FD46B277E5893008DEED0 /* CustomPageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD46A277E5893008DEED0 /* CustomPageConfigurator.swift */; };
+		A47FD46D277F97F0008DEED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */; };
+		A4C91A1027820FDD008A89A6 /* UserSearchHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A0F27820FDD008A89A6 /* UserSearchHistoryRepository.swift */; };
+		A4C91A13278211BB008A89A6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A12278211BB008A89A6 /* HistoryView.swift */; };
+		A4C91A15278211C5008A89A6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A14278211C5008A89A6 /* HistoryViewController.swift */; };
+		A4C91A17278211D0008A89A6 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A16278211D0008A89A6 /* HistoryViewModel.swift */; };
+		A4C91A1927821576008A89A6 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A1827821576008A89A6 /* HistoryCell.swift */; };
+		A4C91A1B27821D0C008A89A6 /* HistoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A1A27821D0C008A89A6 /* HistoryConfigurator.swift */; };
+		A4C91A1D27822436008A89A6 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A1C27822436008A89A6 /* HistoryRouter.swift */; };
+		A4C91A1F27822E97008A89A6 /* RemoteAlphabetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A1E27822E97008A89A6 /* RemoteAlphabetRepository.swift */; };
+		A4E7113C278B895F00E51DB1 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7113B278B895F00E51DB1 /* DictionaryViewController.swift */; };
+		A4E7113E278B89BE00E51DB1 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7113D278B89BE00E51DB1 /* DictionaryView.swift */; };
+		A4E71140278B8A3300E51DB1 /* DictionaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7113F278B8A3300E51DB1 /* DictionaryCell.swift */; };
+		A4E71142278B8B7100E51DB1 /* DictionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E71141278B8B7100E51DB1 /* DictionaryViewModel.swift */; };
+		A4E71144278B8FBA00E51DB1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E71143278B8FBA00E51DB1 /* Dictionary.swift */; };
+		A4E71146278B931100E51DB1 /* DictionaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E71145278B931100E51DB1 /* DictionaryConfigurator.swift */; };
+		A4E71148278B9AB900E51DB1 /* CreateBrailleSheetUseCaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E71147278B9AB900E51DB1 /* CreateBrailleSheetUseCaseConfigurator.swift */; };
+		A4E7114A278BB3D000E51DB1 /* HistoryFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E71149278BB3D000E51DB1 /* HistoryFooterView.swift */; };
 		A4E7DC0527446B7E00E84CDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC0427446B7E00E84CDE /* AppDelegate.swift */; };
-		A4E7DC0727446B7E00E84CDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC0627446B7E00E84CDE /* SceneDelegate.swift */; };
-		A4E7DC0927446B7E00E84CDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC0827446B7E00E84CDE /* ViewController.swift */; };
-		A4E7DC0C27446B7E00E84CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7DC0A27446B7E00E84CDE /* Main.storyboard */; };
 		A4E7DC0E27446B8100E84CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E7DC0D27446B8100E84CDE /* Assets.xcassets */; };
-		A4E7DC1127446B8100E84CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7DC0F27446B8100E84CDE /* LaunchScreen.storyboard */; };
 		A4E7DC1C27446B8100E84CDE /* TCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC1B27446B8100E84CDE /* TCCTests.swift */; };
 		A4E7DC2627446B8200E84CDE /* TCCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC2527446B8200E84CDE /* TCCUITests.swift */; };
 		A4E7DC2827446B8200E84CDE /* TCCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC2727446B8200E84CDE /* TCCUITestsLaunchTests.swift */; };
+		A4E7DC3727446F9400E84CDE /* BrailleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC3627446F9400E84CDE /* BrailleView.swift */; };
+		A4E7DC3B27446FB600E84CDE /* BrailleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC3A27446FB600E84CDE /* BrailleViewController.swift */; };
+		A4E7DC452744712800E84CDE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7DC442744712800E84CDE /* TabBarViewController.swift */; };
+		D825BA537B7450C157F7034B /* libPods-TCC-TCCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B349C73C65824C9A9681CDD /* libPods-TCC-TCCUITests.a */; };
+		F7BD4EACDB4BFB854E5CE89E /* libPods-TCCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAA435C48B05B5184891632 /* libPods-TCCTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +91,80 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		467C4BD8AAD77739C1921D01 /* Pods-TCC-TCCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC-TCCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TCC-TCCUITests/Pods-TCC-TCCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55A39C2795061C574F7EE81E /* Pods-TCCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCCTests.release.xcconfig"; path = "Target Support Files/Pods-TCCTests/Pods-TCCTests.release.xcconfig"; sourceTree = "<group>"; };
+		6161D5ADF921E65AEB4FEAD3 /* Pods-TCCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCCTests.debug.xcconfig"; path = "Target Support Files/Pods-TCCTests/Pods-TCCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAA435C48B05B5184891632 /* libPods-TCCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		858B0AB4C909F09DB20D7C3C /* Pods-TCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC.debug.xcconfig"; path = "Target Support Files/Pods-TCC/Pods-TCC.debug.xcconfig"; sourceTree = "<group>"; };
+		862733790A520F447874CABC /* Pods-TCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC.release.xcconfig"; path = "Target Support Files/Pods-TCC/Pods-TCC.release.xcconfig"; sourceTree = "<group>"; };
+		9B349C73C65824C9A9681CDD /* libPods-TCC-TCCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCC-TCCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41EA70B275D6931007A64EB /* GetLineCountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLineCountUseCase.swift; sourceTree = "<group>"; };
+		A41EA70D275D6C00007A64EB /* ConvertWordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWordUseCase.swift; sourceTree = "<group>"; };
+		A41EA70F275D7E83007A64EB /* CreateBrailleSheetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBrailleSheetUseCase.swift; sourceTree = "<group>"; };
+		A41EA711275D97D6007A64EB /* ConvertBrailleCellToPixelsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBrailleCellToPixelsUseCase.swift; sourceTree = "<group>"; };
+		A41EA713275D997A007A64EB /* ConvertPrinterSheetToPixelsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertPrinterSheetToPixelsUseCase.swift; sourceTree = "<group>"; };
+		A41EA715275D9E65007A64EB /* GetBrailleLinesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrailleLinesUseCase.swift; sourceTree = "<group>"; };
+		A41EA717275D9ED2007A64EB /* Braille.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Braille.swift; sourceTree = "<group>"; };
+		A46F6FDF275C3F3400956694 /* ConvertPixelByMMUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertPixelByMMUseCase.swift; sourceTree = "<group>"; };
+		A46F6FE1275C48A600956694 /* BrailleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleViewModel.swift; sourceTree = "<group>"; };
+		A46F6FE3275C4B7600956694 /* BrailleAlphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleAlphabet.swift; sourceTree = "<group>"; };
+		A46F6FE5275C4C4800956694 /* LocalAlphabetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAlphabetService.swift; sourceTree = "<group>"; };
+		A46F6FE7275C4ED800956694 /* BrailleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleCell.swift; sourceTree = "<group>"; };
+		A46F6FE9275C51FF00956694 /* PrinterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterSheet.swift; sourceTree = "<group>"; };
+		A46F6FEB275C542200956694 /* GetLineSizeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLineSizeUseCase.swift; sourceTree = "<group>"; };
+		A46F6FED275C557100956694 /* GetPrinterSheetWithMarginsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPrinterSheetWithMarginsUseCase.swift; sourceTree = "<group>"; };
+		A47FD43E277A0603008DEED0 /* CreationModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModeViewController.swift; sourceTree = "<group>"; };
+		A47FD440277A0636008DEED0 /* BrailleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleRouter.swift; sourceTree = "<group>"; };
+		A47FD444277A09B8008DEED0 /* CreationModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModeView.swift; sourceTree = "<group>"; };
+		A47FD446277A0C7F008DEED0 /* CreationModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModeViewModel.swift; sourceTree = "<group>"; };
+		A47FD448277A0CBE008DEED0 /* CreationModeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModeDataStore.swift; sourceTree = "<group>"; };
+		A47FD44A277A0D7B008DEED0 /* CreationModeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModeConfigurator.swift; sourceTree = "<group>"; };
+		A47FD44D277A2FE8008DEED0 /* CreatePDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePDFViewController.swift; sourceTree = "<group>"; };
+		A47FD44F277A2FF2008DEED0 /* CreatePDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePDFView.swift; sourceTree = "<group>"; };
+		A47FD451277A2FFD008DEED0 /* CreatePDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePDFViewModel.swift; sourceTree = "<group>"; };
+		A47FD453277A356D008DEED0 /* CreatePDFConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePDFConfigurator.swift; sourceTree = "<group>"; };
+		A47FD455277A55A6008DEED0 /* GetBrailleSheetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrailleSheetsUseCase.swift; sourceTree = "<group>"; };
+		A47FD457277A609A008DEED0 /* CreateBraillePagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBraillePagesUseCase.swift; sourceTree = "<group>"; };
+		A47FD459277E196A008DEED0 /* CreateBraillePagesUseCaseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBraillePagesUseCaseConfigurator.swift; sourceTree = "<group>"; };
+		A47FD45B277E208F008DEED0 /* BraillePageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraillePageConfiguration.swift; sourceTree = "<group>"; };
+		A47FD45D277E23E8008DEED0 /* BrailleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleConfigurator.swift; sourceTree = "<group>"; };
+		A47FD460277E3F84008DEED0 /* CustomPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageView.swift; sourceTree = "<group>"; };
+		A47FD462277E3FB1008DEED0 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		A47FD464277E3FBC008DEED0 /* CustomPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewModel.swift; sourceTree = "<group>"; };
+		A47FD466277E4021008DEED0 /* CustomFieldEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldEditView.swift; sourceTree = "<group>"; };
+		A47FD468277E45A0008DEED0 /* CustomPageDisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageDisplayViewModel.swift; sourceTree = "<group>"; };
+		A47FD46A277E5893008DEED0 /* CustomPageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageConfigurator.swift; sourceTree = "<group>"; };
+		A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4C91A0F27820FDD008A89A6 /* UserSearchHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchHistoryRepository.swift; sourceTree = "<group>"; };
+		A4C91A12278211BB008A89A6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A4C91A14278211C5008A89A6 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A4C91A16278211D0008A89A6 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		A4C91A1827821576008A89A6 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		A4C91A1A27821D0C008A89A6 /* HistoryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryConfigurator.swift; sourceTree = "<group>"; };
+		A4C91A1C27822436008A89A6 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		A4C91A1E27822E97008A89A6 /* RemoteAlphabetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAlphabetRepository.swift; sourceTree = "<group>"; };
+		A4E7113B278B895F00E51DB1 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		A4E7113D278B89BE00E51DB1 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		A4E7113F278B8A3300E51DB1 /* DictionaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryCell.swift; sourceTree = "<group>"; };
+		A4E71141278B8B7100E51DB1 /* DictionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewModel.swift; sourceTree = "<group>"; };
+		A4E71143278B8FBA00E51DB1 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		A4E71145278B931100E51DB1 /* DictionaryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryConfigurator.swift; sourceTree = "<group>"; };
+		A4E71147278B9AB900E51DB1 /* CreateBrailleSheetUseCaseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBrailleSheetUseCaseConfigurator.swift; sourceTree = "<group>"; };
+		A4E71149278BB3D000E51DB1 /* HistoryFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryFooterView.swift; sourceTree = "<group>"; };
 		A4E7DC0127446B7E00E84CDE /* TCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7DC0427446B7E00E84CDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4E7DC0627446B7E00E84CDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4E7DC0827446B7E00E84CDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A4E7DC0B27446B7E00E84CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4E7DC0D27446B8100E84CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4E7DC1027446B8100E84CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E7DC1227446B8100E84CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E7DC1727446B8100E84CDE /* TCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7DC1B27446B8100E84CDE /* TCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCTests.swift; sourceTree = "<group>"; };
 		A4E7DC2127446B8100E84CDE /* TCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7DC2527446B8200E84CDE /* TCCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCUITests.swift; sourceTree = "<group>"; };
 		A4E7DC2727446B8200E84CDE /* TCCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4E7DC3627446F9400E84CDE /* BrailleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleView.swift; sourceTree = "<group>"; };
+		A4E7DC3A27446FB600E84CDE /* BrailleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleViewController.swift; sourceTree = "<group>"; };
+		A4E7DC442744712800E84CDE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CBC1F2863048BCB6C8A7F073 /* Pods-TCC-TCCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC-TCCUITests.release.xcconfig"; path = "Target Support Files/Pods-TCC-TCCUITests/Pods-TCC-TCCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8249E86A05F7CEAE6AD0EE6 /* libPods-TCC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499772980A25FDB1FD411EF9 /* libPods-TCC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BD4EACDB4BFB854E5CE89E /* libPods-TCCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +188,159 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D825BA537B7450C157F7034B /* libPods-TCC-TCCUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183C9BF1D029A37FDA104C17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858B0AB4C909F09DB20D7C3C /* Pods-TCC.debug.xcconfig */,
+				862733790A520F447874CABC /* Pods-TCC.release.xcconfig */,
+				467C4BD8AAD77739C1921D01 /* Pods-TCC-TCCUITests.debug.xcconfig */,
+				CBC1F2863048BCB6C8A7F073 /* Pods-TCC-TCCUITests.release.xcconfig */,
+				6161D5ADF921E65AEB4FEAD3 /* Pods-TCCTests.debug.xcconfig */,
+				55A39C2795061C574F7EE81E /* Pods-TCCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1F79E2407762AB1C258B2383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8249E86A05F7CEAE6AD0EE6 /* libPods-TCC.a */,
+				9B349C73C65824C9A9681CDD /* libPods-TCC-TCCUITests.a */,
+				7EAA435C48B05B5184891632 /* libPods-TCCTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A41EA709275D66E7007A64EB /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A46F6FEB275C542200956694 /* GetLineSizeUseCase.swift */,
+				A46F6FED275C557100956694 /* GetPrinterSheetWithMarginsUseCase.swift */,
+				A46F6FDF275C3F3400956694 /* ConvertPixelByMMUseCase.swift */,
+				A41EA70B275D6931007A64EB /* GetLineCountUseCase.swift */,
+				A41EA70D275D6C00007A64EB /* ConvertWordUseCase.swift */,
+				A41EA70F275D7E83007A64EB /* CreateBrailleSheetUseCase.swift */,
+				A41EA711275D97D6007A64EB /* ConvertBrailleCellToPixelsUseCase.swift */,
+				A41EA713275D997A007A64EB /* ConvertPrinterSheetToPixelsUseCase.swift */,
+				A41EA715275D9E65007A64EB /* GetBrailleLinesUseCase.swift */,
+				A47FD455277A55A6008DEED0 /* GetBrailleSheetsUseCase.swift */,
+				A47FD457277A609A008DEED0 /* CreateBraillePagesUseCase.swift */,
+				A47FD459277E196A008DEED0 /* CreateBraillePagesUseCaseConfigurator.swift */,
+				A4E71147278B9AB900E51DB1 /* CreateBrailleSheetUseCaseConfigurator.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A41EA70A275D6706007A64EB /* AlphabetRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A46F6FE5275C4C4800956694 /* LocalAlphabetService.swift */,
+				A4C91A1E27822E97008A89A6 /* RemoteAlphabetRepository.swift */,
+			);
+			path = AlphabetRepository;
+			sourceTree = "<group>";
+		};
+		A41EA71B275D9F16007A64EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A46F6FE3275C4B7600956694 /* BrailleAlphabet.swift */,
+				A46F6FE9275C51FF00956694 /* PrinterSheet.swift */,
+				A46F6FE7275C4ED800956694 /* BrailleCell.swift */,
+				A41EA717275D9ED2007A64EB /* Braille.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A47FD442277A08DF008DEED0 /* Braille */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7DC3627446F9400E84CDE /* BrailleView.swift */,
+				A4E7DC3A27446FB600E84CDE /* BrailleViewController.swift */,
+				A46F6FE1275C48A600956694 /* BrailleViewModel.swift */,
+				A47FD440277A0636008DEED0 /* BrailleRouter.swift */,
+				A47FD45D277E23E8008DEED0 /* BrailleConfigurator.swift */,
+			);
+			path = Braille;
+			sourceTree = "<group>";
+		};
+		A47FD443277A0908008DEED0 /* CreationMode */ = {
+			isa = PBXGroup;
+			children = (
+				A47FD43E277A0603008DEED0 /* CreationModeViewController.swift */,
+				A47FD444277A09B8008DEED0 /* CreationModeView.swift */,
+				A47FD446277A0C7F008DEED0 /* CreationModeViewModel.swift */,
+				A47FD448277A0CBE008DEED0 /* CreationModeDataStore.swift */,
+				A47FD44A277A0D7B008DEED0 /* CreationModeConfigurator.swift */,
+			);
+			path = CreationMode;
+			sourceTree = "<group>";
+		};
+		A47FD44C277A2FD3008DEED0 /* CreatePDF */ = {
+			isa = PBXGroup;
+			children = (
+				A47FD44D277A2FE8008DEED0 /* CreatePDFViewController.swift */,
+				A47FD44F277A2FF2008DEED0 /* CreatePDFView.swift */,
+				A47FD451277A2FFD008DEED0 /* CreatePDFViewModel.swift */,
+				A47FD453277A356D008DEED0 /* CreatePDFConfigurator.swift */,
+			);
+			path = CreatePDF;
+			sourceTree = "<group>";
+		};
+		A47FD45F277E3E12008DEED0 /* CustomPage */ = {
+			isa = PBXGroup;
+			children = (
+				A47FD460277E3F84008DEED0 /* CustomPageView.swift */,
+				A47FD462277E3FB1008DEED0 /* CustomPageViewController.swift */,
+				A47FD464277E3FBC008DEED0 /* CustomPageViewModel.swift */,
+				A47FD466277E4021008DEED0 /* CustomFieldEditView.swift */,
+				A47FD468277E45A0008DEED0 /* CustomPageDisplayViewModel.swift */,
+				A47FD46A277E5893008DEED0 /* CustomPageConfigurator.swift */,
+			);
+			path = CustomPage;
+			sourceTree = "<group>";
+		};
+		A4C91A0E27820FAF008A89A6 /* HistoryRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A4C91A0F27820FDD008A89A6 /* UserSearchHistoryRepository.swift */,
+			);
+			path = HistoryRepository;
+			sourceTree = "<group>";
+		};
+		A4C91A11278211A7008A89A6 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				A4C91A12278211BB008A89A6 /* HistoryView.swift */,
+				A4C91A14278211C5008A89A6 /* HistoryViewController.swift */,
+				A4C91A16278211D0008A89A6 /* HistoryViewModel.swift */,
+				A4C91A1827821576008A89A6 /* HistoryCell.swift */,
+				A4C91A1A27821D0C008A89A6 /* HistoryConfigurator.swift */,
+				A4C91A1C27822436008A89A6 /* HistoryRouter.swift */,
+				A4E71149278BB3D000E51DB1 /* HistoryFooterView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		A4E7113A278B88AB00E51DB1 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7113B278B895F00E51DB1 /* DictionaryViewController.swift */,
+				A4E7113D278B89BE00E51DB1 /* DictionaryView.swift */,
+				A4E7113F278B8A3300E51DB1 /* DictionaryCell.swift */,
+				A4E71141278B8B7100E51DB1 /* DictionaryViewModel.swift */,
+				A4E71143278B8FBA00E51DB1 /* Dictionary.swift */,
+				A4E71145278B931100E51DB1 /* DictionaryConfigurator.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
 		A4E7DBF827446B7E00E84CDE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +348,8 @@
 				A4E7DC1A27446B8100E84CDE /* TCCTests */,
 				A4E7DC2427446B8100E84CDE /* TCCUITests */,
 				A4E7DC0227446B7E00E84CDE /* Products */,
+				183C9BF1D029A37FDA104C17 /* Pods */,
+				1F79E2407762AB1C258B2383 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +366,22 @@
 		A4E7DC0327446B7E00E84CDE /* TCC */ = {
 			isa = PBXGroup;
 			children = (
+				A4E7113A278B88AB00E51DB1 /* Dictionary */,
+				A4C91A11278211A7008A89A6 /* History */,
+				A4C91A0E27820FAF008A89A6 /* HistoryRepository */,
+				A47FD45F277E3E12008DEED0 /* CustomPage */,
+				A47FD44C277A2FD3008DEED0 /* CreatePDF */,
+				A47FD443277A0908008DEED0 /* CreationMode */,
+				A47FD442277A08DF008DEED0 /* Braille */,
+				A41EA71B275D9F16007A64EB /* Models */,
+				A41EA70A275D6706007A64EB /* AlphabetRepository */,
+				A41EA709275D66E7007A64EB /* UseCases */,
 				A4E7DC0427446B7E00E84CDE /* AppDelegate.swift */,
-				A4E7DC0627446B7E00E84CDE /* SceneDelegate.swift */,
-				A4E7DC0827446B7E00E84CDE /* ViewController.swift */,
-				A4E7DC0A27446B7E00E84CDE /* Main.storyboard */,
 				A4E7DC0D27446B8100E84CDE /* Assets.xcassets */,
-				A4E7DC0F27446B8100E84CDE /* LaunchScreen.storyboard */,
 				A4E7DC1227446B8100E84CDE /* Info.plist */,
+				A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */,
+				A4E7DC442744712800E84CDE /* TabBarViewController.swift */,
+				A47FD45B277E208F008DEED0 /* BraillePageConfiguration.swift */,
 			);
 			path = TCC;
 			sourceTree = "<group>";
@@ -134,6 +410,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E7DC2B27446B8200E84CDE /* Build configuration list for PBXNativeTarget "TCC" */;
 			buildPhases = (
+				CEE52D33683ECD2D1EE877EC /* [CP] Check Pods Manifest.lock */,
 				A4E7DBFD27446B7E00E84CDE /* Sources */,
 				A4E7DBFE27446B7E00E84CDE /* Frameworks */,
 				A4E7DBFF27446B7E00E84CDE /* Resources */,
@@ -143,6 +420,8 @@
 			dependencies = (
 			);
 			name = TCC;
+			packageProductDependencies = (
+			);
 			productName = TCC;
 			productReference = A4E7DC0127446B7E00E84CDE /* TCC.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +430,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E7DC2E27446B8200E84CDE /* Build configuration list for PBXNativeTarget "TCCTests" */;
 			buildPhases = (
+				30E6944792E2F08226EF2BA2 /* [CP] Check Pods Manifest.lock */,
 				A4E7DC1327446B8100E84CDE /* Sources */,
 				A4E7DC1427446B8100E84CDE /* Frameworks */,
 				A4E7DC1527446B8100E84CDE /* Resources */,
@@ -169,6 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E7DC3127446B8200E84CDE /* Build configuration list for PBXNativeTarget "TCCUITests" */;
 			buildPhases = (
+				A47D7820DBEB0F33337A9E7F /* [CP] Check Pods Manifest.lock */,
 				A4E7DC1D27446B8100E84CDE /* Sources */,
 				A4E7DC1E27446B8100E84CDE /* Frameworks */,
 				A4E7DC1F27446B8100E84CDE /* Resources */,
@@ -215,6 +496,8 @@
 				Base,
 			);
 			mainGroup = A4E7DBF827446B7E00E84CDE;
+			packageReferences = (
+			);
 			productRefGroup = A4E7DC0227446B7E00E84CDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +514,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4E7DC1127446B8100E84CDE /* LaunchScreen.storyboard in Resources */,
 				A4E7DC0E27446B8100E84CDE /* Assets.xcassets in Resources */,
-				A4E7DC0C27446B7E00E84CDE /* Main.storyboard in Resources */,
+				A47FD46D277F97F0008DEED0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +535,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30E6944792E2F08226EF2BA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47D7820DBEB0F33337A9E7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCC-TCCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE52D33683ECD2D1EE877EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4E7DBFD27446B7E00E84CDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4E7DC0927446B7E00E84CDE /* ViewController.swift in Sources */,
+				A47FD43F277A0603008DEED0 /* CreationModeViewController.swift in Sources */,
+				A4C91A15278211C5008A89A6 /* HistoryViewController.swift in Sources */,
+				A47FD45C277E208F008DEED0 /* BraillePageConfiguration.swift in Sources */,
+				A47FD463277E3FB1008DEED0 /* CustomPageViewController.swift in Sources */,
+				A47FD450277A2FF2008DEED0 /* CreatePDFView.swift in Sources */,
+				A4C91A1B27821D0C008A89A6 /* HistoryConfigurator.swift in Sources */,
+				A46F6FE8275C4ED800956694 /* BrailleCell.swift in Sources */,
+				A41EA710275D7E83007A64EB /* CreateBrailleSheetUseCase.swift in Sources */,
+				A4E7DC3B27446FB600E84CDE /* BrailleViewController.swift in Sources */,
+				A4C91A13278211BB008A89A6 /* HistoryView.swift in Sources */,
+				A4C91A17278211D0008A89A6 /* HistoryViewModel.swift in Sources */,
+				A47FD465277E3FBC008DEED0 /* CustomPageViewModel.swift in Sources */,
+				A4E7DC452744712800E84CDE /* TabBarViewController.swift in Sources */,
+				A47FD461277E3F84008DEED0 /* CustomPageView.swift in Sources */,
+				A4C91A1F27822E97008A89A6 /* RemoteAlphabetRepository.swift in Sources */,
+				A47FD445277A09B8008DEED0 /* CreationModeView.swift in Sources */,
+				A47FD458277A609A008DEED0 /* CreateBraillePagesUseCase.swift in Sources */,
+				A47FD44E277A2FE8008DEED0 /* CreatePDFViewController.swift in Sources */,
+				A4E71146278B931100E51DB1 /* DictionaryConfigurator.swift in Sources */,
+				A46F6FE2275C48A600956694 /* BrailleViewModel.swift in Sources */,
 				A4E7DC0527446B7E00E84CDE /* AppDelegate.swift in Sources */,
-				A4E7DC0727446B7E00E84CDE /* SceneDelegate.swift in Sources */,
+				A46F6FE0275C3F3400956694 /* ConvertPixelByMMUseCase.swift in Sources */,
+				A47FD441277A0636008DEED0 /* BrailleRouter.swift in Sources */,
+				A46F6FEE275C557100956694 /* GetPrinterSheetWithMarginsUseCase.swift in Sources */,
+				A4E71144278B8FBA00E51DB1 /* Dictionary.swift in Sources */,
+				A41EA714275D997A007A64EB /* ConvertPrinterSheetToPixelsUseCase.swift in Sources */,
+				A47FD449277A0CBE008DEED0 /* CreationModeDataStore.swift in Sources */,
+				A4E71140278B8A3300E51DB1 /* DictionaryCell.swift in Sources */,
+				A47FD469277E45A0008DEED0 /* CustomPageDisplayViewModel.swift in Sources */,
+				A46F6FE4275C4B7600956694 /* BrailleAlphabet.swift in Sources */,
+				A47FD447277A0C7F008DEED0 /* CreationModeViewModel.swift in Sources */,
+				A41EA70E275D6C00007A64EB /* ConvertWordUseCase.swift in Sources */,
+				A4C91A1927821576008A89A6 /* HistoryCell.swift in Sources */,
+				A47FD456277A55A6008DEED0 /* GetBrailleSheetsUseCase.swift in Sources */,
+				A4E7113C278B895F00E51DB1 /* DictionaryViewController.swift in Sources */,
+				A47FD452277A2FFD008DEED0 /* CreatePDFViewModel.swift in Sources */,
+				A4E7113E278B89BE00E51DB1 /* DictionaryView.swift in Sources */,
+				A47FD46B277E5893008DEED0 /* CustomPageConfigurator.swift in Sources */,
+				A41EA716275D9E65007A64EB /* GetBrailleLinesUseCase.swift in Sources */,
+				A4E71142278B8B7100E51DB1 /* DictionaryViewModel.swift in Sources */,
+				A47FD454277A356D008DEED0 /* CreatePDFConfigurator.swift in Sources */,
+				A4E71148278B9AB900E51DB1 /* CreateBrailleSheetUseCaseConfigurator.swift in Sources */,
+				A41EA718275D9ED2007A64EB /* Braille.swift in Sources */,
+				A46F6FE6275C4C4800956694 /* LocalAlphabetService.swift in Sources */,
+				A4C91A1D27822436008A89A6 /* HistoryRouter.swift in Sources */,
+				A47FD45A277E196A008DEED0 /* CreateBraillePagesUseCaseConfigurator.swift in Sources */,
+				A47FD44B277A0D7B008DEED0 /* CreationModeConfigurator.swift in Sources */,
+				A47FD45E277E23E8008DEED0 /* BrailleConfigurator.swift in Sources */,
+				A4E7114A278BB3D000E51DB1 /* HistoryFooterView.swift in Sources */,
+				A4C91A1027820FDD008A89A6 /* UserSearchHistoryRepository.swift in Sources */,
+				A46F6FEC275C542200956694 /* GetLineSizeUseCase.swift in Sources */,
+				A46F6FEA275C51FF00956694 /* PrinterSheet.swift in Sources */,
+				A41EA712275D97D6007A64EB /* ConvertBrailleCellToPixelsUseCase.swift in Sources */,
+				A41EA70C275D6931007A64EB /* GetLineCountUseCase.swift in Sources */,
+				A4E7DC3727446F9400E84CDE /* BrailleView.swift in Sources */,
+				A47FD467277E4021008DEED0 /* CustomFieldEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +699,6 @@
 			targetProxy = A4E7DC2227446B8100E84CDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A4E7DC0A27446B7E00E84CDE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4E7DC0B27446B7E00E84CDE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A4E7DC0F27446B8100E84CDE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4E7DC1027446B8100E84CDE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A4E7DC2927446B8200E84CDE /* Debug */ = {
@@ -367,7 +752,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +807,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,6 +819,7 @@
 		};
 		A4E7DC2C27446B8200E84CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858B0AB4C909F09DB20D7C3C /* Pods-TCC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,10 +829,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TCC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = TestViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +849,7 @@
 		};
 		A4E7DC2D27446B8200E84CDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862733790A520F447874CABC /* Pods-TCC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,10 +859,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TCC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = TestViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +879,7 @@
 		};
 		A4E7DC2F27446B8200E84CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6161D5ADF921E65AEB4FEAD3 /* Pods-TCCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +905,7 @@
 		};
 		A4E7DC3027446B8200E84CDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A39C2795061C574F7EE81E /* Pods-TCCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +931,7 @@
 		};
 		A4E7DC3227446B8200E84CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467C4BD8AAD77739C1921D01 /* Pods-TCC-TCCUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +955,7 @@
 		};
 		A4E7DC3327446B8200E84CDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC1F2863048BCB6C8A7F073 /* Pods-TCC-TCCUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

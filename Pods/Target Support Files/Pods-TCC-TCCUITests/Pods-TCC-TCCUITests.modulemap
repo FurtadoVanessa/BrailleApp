@@ -1,0 +1,6 @@
+module Pods_TCC_TCCUITests {
+  umbrella header "Pods-TCC-TCCUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
