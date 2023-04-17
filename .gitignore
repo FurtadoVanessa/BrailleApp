@@ -1,0 +1,6 @@
+Podfile.lock
+Pods/*
+*.dSYM.zip
+*.ipa
+*.xcodeproj
+*.xcworkspace
