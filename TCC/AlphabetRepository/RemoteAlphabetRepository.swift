@@ -26,7 +26,7 @@ final class RemoteAlphabetService: AlphabetServiceProtocol {
                 print(error?.localizedDescription)
                 return
             }
-            let data = snapshot.value as! [String: String]
+            let data = snapshot?.value as! [String: String]
             
             do {
                 for (key, value) in data {

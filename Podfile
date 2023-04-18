@@ -1,5 +1,7 @@
 platform :ios, '13.0'
 
+use_modular_headers!
+
 target 'TCC' do
   pod 'Cartography', '~> 3.0'
   pod 'Firebase/Auth'

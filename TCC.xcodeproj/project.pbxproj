@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		499772980A25FDB1FD411EF9 /* libPods-TCC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8249E86A05F7CEAE6AD0EE6 /* libPods-TCC.a */; };
+		8E55556A29EE16B000B72077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E55556929EE16B000B72077 /* GoogleService-Info.plist */; };
 		A41EA70C275D6931007A64EB /* GetLineCountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70B275D6931007A64EB /* GetLineCountUseCase.swift */; };
 		A41EA70E275D6C00007A64EB /* ConvertWordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70D275D6C00007A64EB /* ConvertWordUseCase.swift */; };
 		A41EA710275D7E83007A64EB /* CreateBrailleSheetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EA70F275D7E83007A64EB /* CreateBrailleSheetUseCase.swift */; };
@@ -44,7 +45,6 @@
 		A47FD467277E4021008DEED0 /* CustomFieldEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD466277E4021008DEED0 /* CustomFieldEditView.swift */; };
 		A47FD469277E45A0008DEED0 /* CustomPageDisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD468277E45A0008DEED0 /* CustomPageDisplayViewModel.swift */; };
 		A47FD46B277E5893008DEED0 /* CustomPageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FD46A277E5893008DEED0 /* CustomPageConfigurator.swift */; };
-		A47FD46D277F97F0008DEED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */; };
 		A4C91A1027820FDD008A89A6 /* UserSearchHistoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A0F27820FDD008A89A6 /* UserSearchHistoryRepository.swift */; };
 		A4C91A13278211BB008A89A6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A12278211BB008A89A6 /* HistoryView.swift */; };
 		A4C91A15278211C5008A89A6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C91A14278211C5008A89A6 /* HistoryViewController.swift */; };
@@ -97,6 +97,7 @@
 		7EAA435C48B05B5184891632 /* libPods-TCCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B0AB4C909F09DB20D7C3C /* Pods-TCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC.debug.xcconfig"; path = "Target Support Files/Pods-TCC/Pods-TCC.debug.xcconfig"; sourceTree = "<group>"; };
 		862733790A520F447874CABC /* Pods-TCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCC.release.xcconfig"; path = "Target Support Files/Pods-TCC/Pods-TCC.release.xcconfig"; sourceTree = "<group>"; };
+		8E55556929EE16B000B72077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B349C73C65824C9A9681CDD /* libPods-TCC-TCCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCC-TCCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41EA70B275D6931007A64EB /* GetLineCountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLineCountUseCase.swift; sourceTree = "<group>"; };
 		A41EA70D275D6C00007A64EB /* ConvertWordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWordUseCase.swift; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		A47FD466277E4021008DEED0 /* CustomFieldEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldEditView.swift; sourceTree = "<group>"; };
 		A47FD468277E45A0008DEED0 /* CustomPageDisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageDisplayViewModel.swift; sourceTree = "<group>"; };
 		A47FD46A277E5893008DEED0 /* CustomPageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageConfigurator.swift; sourceTree = "<group>"; };
-		A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4C91A0F27820FDD008A89A6 /* UserSearchHistoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchHistoryRepository.swift; sourceTree = "<group>"; };
 		A4C91A12278211BB008A89A6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		A4C91A14278211C5008A89A6 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -366,6 +366,7 @@
 		A4E7DC0327446B7E00E84CDE /* TCC */ = {
 			isa = PBXGroup;
 			children = (
+				8E55556929EE16B000B72077 /* GoogleService-Info.plist */,
 				A4E7113A278B88AB00E51DB1 /* Dictionary */,
 				A4C91A11278211A7008A89A6 /* History */,
 				A4C91A0E27820FAF008A89A6 /* HistoryRepository */,
@@ -379,7 +380,6 @@
 				A4E7DC0427446B7E00E84CDE /* AppDelegate.swift */,
 				A4E7DC0D27446B8100E84CDE /* Assets.xcassets */,
 				A4E7DC1227446B8100E84CDE /* Info.plist */,
-				A47FD46C277F97F0008DEED0 /* GoogleService-Info.plist */,
 				A4E7DC442744712800E84CDE /* TabBarViewController.swift */,
 				A47FD45B277E208F008DEED0 /* BraillePageConfiguration.swift */,
 			);
@@ -515,7 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E7DC0E27446B8100E84CDE /* Assets.xcassets in Resources */,
-				A47FD46D277F97F0008DEED0 /* GoogleService-Info.plist in Resources */,
+				8E55556A29EE16B000B72077 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

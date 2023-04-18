@@ -3,3 +3,4 @@ Pods/*
 *.dSYM.zip
 *.ipa
 *.xcworkspace
+TCC/GoogleService-Info.plist
